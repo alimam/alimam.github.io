@@ -12,14 +12,33 @@
 
 <!The lines below are copy paste from twitter dev https://dev.twitter.com/web/tweet-button>
   <a class="twitter-share-button"
-  href="https://twitter.com/share">
+     href="https://twitter.com/share">
   Tweet
-</a>
+  </a>
 <script type="text/javascript">
-window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
+window.twttr=(function(d,s,id){
+  var t,js,fjs=d.getElementsByTagName(s)[0];
+  if(d.getElementById(id)){
+    return
+    }
+    js=d.createElement(s);
+    js.id=id;
+    js.src="https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js,fjs);
+    return window.twttr||(t={
+                          _e:[],
+                          ready:function(f){
+                            t._e.push(f)
+                          }
+                        })
+    }
+    (document,"script","twitter-wjs"));
 </script>
 
 
 </body>
-
+<!Development Notes>
+<!Add a tweet site button use code on the following URL https://dev.twitter.com/web/tweet-button>
+<!Remember the count counts how many tweets for the website>
+<!Create the tweet button from the following link https://about.twitter.com/resources/buttons#mention>
 </html>
